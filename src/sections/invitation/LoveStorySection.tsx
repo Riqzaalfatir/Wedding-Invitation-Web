@@ -3,7 +3,7 @@ import { ibm, libre } from "@/lib/fonts"
 
 const LoveStorySection = () => {
   return (
-    <section className="relative w-full h-screen py-[179px] overflow-hidden">
+    <section className="relative w-full min-h-screen py-[179px] overflow-hidden">
       <Image src="/bg-paper.png" alt="bg" fill className="object-cover -z-10" priority/>
 
         <div className="pointer-events-none absolute top-0 left-0 w-full h-4 bg-gradient-to-b from-[#f5f5f5] to-transparent z-0" />
@@ -32,6 +32,8 @@ const LoveStorySection = () => {
       <img src="/OrnamenKananAtas.png" alt="Ornamen" className="absolute top-0 right-0 w-[208px] h-[208px] z-10" />
       <img src="/OrnamenKiriBawah.png" alt="Ornamen" className="absolute bottom-0 left-0 w-[208px] h-[208px] z-10" />
       <img src="/OrnamenKananBawah.png" alt="Ornamen" className="absolute bottom-0 right-0 w-[208px] h-[208px] z-10" />
+
+        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-4 bg-gradient-to-t from-[#f5f5f5] to-transparent z-0" />
     </section>
   )
 }

@@ -5,6 +5,10 @@ import LoveStorySection from '@/sections/invitation/LoveStorySection'
 import WeddingEvent from '@/sections/invitation/WeddingEvent'
 import AlmostSection from '@/sections/invitation/AlmostSection'
 import RsvSection from '@/sections/invitation/RsvSection'
+import ComentSection from '@/sections/invitation/ComentSection'
+import GallerySection from '@/sections/invitation/GallerySection'
+import WeddingGiftSection from '@/sections/invitation/WeddingGiftSection'
+import ThankYouSection from '@/sections/invitation/ThankYouSection'
 
 const page = () => {
   return (
@@ -16,6 +20,10 @@ const page = () => {
       <WeddingEvent />
       <AlmostSection />
       <RsvSection />
+      <ComentSection />
+      <GallerySection />
+      <WeddingGiftSection />
+      <ThankYouSection />
     </>
   )
 }

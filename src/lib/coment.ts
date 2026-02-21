@@ -1,0 +1,92 @@
+export const coment = [
+    {
+        id: 1,
+        nama: "Andri",
+        pesan: "Happy wedding day, Jojo and Sherla! May you lead a happy and warm family. Wishing to see little Jojos and Sherlas soon.",
+        waktu: "10 October 2021",
+    },
+    {
+        id: 2,
+        nama: "Valencia Tjong",
+        pesan: "So happy for both of u! happily ever after sampe maut memisahkan yaa",
+        waktu: "11 October 2021",
+    },
+    {
+        id: 3,
+        nama: "Lengleng",
+        pesan: "Congrats Jojo & Sherla! Sorry cant be there on ur special day, tapi wish & semua doa tetep nyampe kuks. Happily ever after yaa! ",
+        waktu: "11 October 2021",
+    },
+    {
+        id: 4,
+        nama: "Adriel",
+        pesan: "Congrats Sherla and Jojo, all the best for you and for your marriage.. hope it will be incredible journey for you two.. God bless",
+        waktu: "11 October 2021",
+    },
+    {
+        id: 5,
+        nama: "Ferdy Meikur",
+        pesan: "Congrats kalian! Time flies so fast, through many ups and downs, hope you guys be happily ever after",
+        waktu: "10 October 2021",
+    },
+    {
+        id: 6,
+        nama: "Ferdy Meikur",
+        pesan: "Congrats kalian! Time flies so fast, through many ups and downs, hope you guys be happily ever after",
+        waktu: "10 October 2021",
+    },
+    {
+        id: 7,
+        nama: "Ferdy Meikur",
+        pesan: "Congrats kalian! Time flies so fast, through many ups and downs, hope you guys be happily ever after",
+        waktu: "10 October 2021",
+    },
+    {
+        id: 8,
+        nama: "Ferdy Meikur",
+        pesan: "Congrats kalian! Time flies so fast, through many ups and downs, hope you guys be happily ever after",
+        waktu: "10 October 2021",
+    },
+    {
+        id: 9,
+        nama: "Ferdy Meikur",
+        pesan: "Congrats kalian! Time flies so fast, through many ups and downs, hope you guys be happily ever after",
+        waktu: "10 October 2021",
+    },
+    {
+        id: 10,
+        nama: "Ferdy Meikur",
+        pesan: "Congrats kalian! Time flies so fast, through many ups and downs, hope you guys be happily ever after",
+        waktu: "10 October 2021",
+    },
+    {
+        id: 11,
+        nama: "Adriel",
+        pesan: "Congrats Sherla and Jojo, all the best for you and for your marriage.. hope it will be incredible journey for you two.. God bless",
+        waktu: "11 October 2021",
+    },
+    {
+        id: 12,
+        nama: "Adriel",
+        pesan: "Congrats Sherla and Jojo, all the best for you and for your marriage.. hope it will be incredible journey for you two.. God bless",
+        waktu: "11 October 2021",
+    },
+    {
+        id: 13,
+        nama: "Adriel",
+        pesan: "Congrats Sherla and Jojo, all the best for you and for your marriage.. hope it will be incredible journey for you two.. God bless",
+        waktu: "11 October 2021",
+    },
+    {
+        id: 14,
+        nama: "Adriel",
+        pesan: "Congrats Sherla and Jojo, all the best for you and for your marriage.. hope it will be incredible journey for you two.. God bless",
+        waktu: "11 October 2021",
+    },
+    {
+        id: 15,
+        nama: "Adriel",
+        pesan: "Congrats Sherla and Jojo, all the best for you and for your marriage.. hope it will be incredible journey for you two.. God bless",
+        waktu: "11 October 2021",
+    },
+]

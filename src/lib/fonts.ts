@@ -18,5 +18,5 @@ export const lobster = Lobster({
 
 export const khula = Khula({
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["300", "400", "600"],
 });
