@@ -49,7 +49,7 @@ export default function Page() {
       </div>
 
       {/* Opening Overlay */}
-      <Opening opened={opened} onOpen={() => setOpened(true)} />
+      <Opening onOpen={() => setOpened(true)} />
 
     </main>
   )
