@@ -10,20 +10,20 @@ const ProfileSection = () => {
         src="/bg-paper.png"
         alt="bg"
         fill
-        className="object-cover -z-10"
+        className="object-cover object-bottom -z-10"
         priority
       />
 
-        <div className="pointer-events-none absolute top-0 left-0 w-full h-4 bg-gradient-to-b from-[#f5f5f5] to-transparent z-0" />
+      {/* <div className="pointer-events-none absolute top-0 left-0 w-full h-2- bg-gradient-to-b from-[#f5f5f5] to-transparent z-0" /> */}
 
 
       {/* ========================= */}
       {/* MOBILE & TABLET LAYOUT */}
       {/* ========================= */}
-      <div className="flex flex-col items-center gap-12 px-6 lg:hidden">
+      <div className="flex flex-col items-center p-[25px] sm:p-[40px] gap-12 px-6 lg:hidden">
 
         {/* FOTO */}
-        <div className="relative w-[280px] h-[300px] sm:w-[340px] sm:h-[360px]">
+        <div className="relative w-[250px] h-[270px] sm:w-[380px] sm:h-[400px]">
           <Image
             src="/couple.png"
             alt="couple"
@@ -34,28 +34,28 @@ const ProfileSection = () => {
 
         {/* GROOM */}
         <div className="text-center">
-          <p className={`${ibm.className} font-medium text-[20px] uppercase text-[#082B21]`}>
+          <p className={`${ibm.className} font-medium mb-1 text-[20px] sm:text-[28px] uppercase text-[#082B21]`}>
             THE GROOM
           </p>
-          <h2 className={`${ibm.className} font-semibold text-[28px] text-[#082B21]`}>
+          <h2 className={`${ibm.className} font-semibold  text-[28px] sm:text-[36px]  text-[#082B21]`}>
             Jonathan Liandi
           </h2>
-          <p className="text-[16px] mt-2">The Son of</p>
-          <p className="text-[16px]">Mr. Petrus Hendra</p>
-          <p className="text-[16px]">Mrs. Yulia</p>
+          <p className="text-[18px] sm:text-[24px] mt-2 text-[#082B21]">The Son of</p>
+          <p className="text-[16px] sm:text-[22px] text-[#082B21]">Mr. Petrus Hendra</p>
+          <p className="text-[16px] sm:text-[22px] text-[#082B21]">Mrs. Yulia</p>
         </div>
 
         {/* BRIDE */}
         <div className="text-center">
-          <p className={`${ibm.className} font-medium text-[20px] uppercase text-[#082B21]`}>
+          <p className={`${ibm.className} font-medium mb-1 text-[20px] sm:text-[28px] uppercase text-[#082B21]`}>
             THE BRIDE
           </p>
-          <h2 className={`${khula.className} font-semibold text-[28px] text-[#082B21]`}>
+          <h2 className={`${khula.className} font-semibold text-[28px] sm:text-[36px] text-[#082B21]`}>
             Sherla
           </h2>
-          <p className="text-[16px] mt-2">The Daughter of</p>
-          <p className="text-[16px]">Mr. Amran</p>
-          <p className="text-[16px]">Ms. Suharty</p>
+          <p className="text-[16px] sm:text-[24px]  mt-2 text-[#082B21]">The Daughter of</p>
+          <p className="text-[16px] sm:text-[22px] text-[#082B21]">Mr. Amran</p>
+          <p className="text-[16px] sm:text-[22px] text-[#082B21]">Ms. Suharty</p>
         </div>
       </div>
 
@@ -113,25 +113,25 @@ const ProfileSection = () => {
         {/* ORNAMEN DESKTOP */}
         <img
           src="/ornamen-kanan.png"
-          className="absolute top-[40px] right-[120px] w-[380px]"
+          className="absolute top-[40px] right-[120px] w-[380px] z-10"
         />
         <img
           src="/ornamen-kiri.png"
-          className="absolute bottom-[40px] left-[120px] w-[380px]"
+          className="absolute bottom-[40px] left-[120px] w-[380px] z-10"
         />
       </div>
 
       {/* ORNAMEN MOBILE (lebih kecil & subtle) */}
       <img
         src="/ornamen-kanan.png"
-        className="absolute top-0 right-0 w-[180px] opacity-70 lg:hidden"
+        className="absolute top-0 right-0 w-[180px] sm:w-[340px] opacity-70 lg:hidden z-10"
       />
       <img
         src="/ornamen-kiri.png"
-        className="absolute bottom-0 left-0 w-[180px] opacity-70 lg:hidden"
+        className="absolute bottom-0 left-0 w-[180px] sm:w-[340px] opacity-70 lg:hidden z-10"
       />
 
-        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-4 bg-gradient-to-t from-[#f5f5f5] to-transparent z-0" />
+      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-20 lg:h-50 bg-gradient-to-t from-[#f5f5f5] to-transparent z-0" />
 
 
     </section>

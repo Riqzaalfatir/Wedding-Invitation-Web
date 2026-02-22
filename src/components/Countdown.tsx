@@ -10,13 +10,9 @@ type TimeLeft = {
   seconds: number
 }
 
-/* ============================= */
-/* UBAH TANGGAL EVENT DI SINI 👇 */
-/* ============================= */
-
 const EVENT_DATE = {
   year: 2026,
-  month: 3,   // 1 = Jan, 2 = Feb, 3 = Mar
+  month: 3,
   day: 1,
   hour: 0,
   minute: 0,
@@ -24,7 +20,7 @@ const EVENT_DATE = {
 
 const targetDate = new Date(
   EVENT_DATE.year,
-  EVENT_DATE.month - 1, // JS month mulai dari 0
+  EVENT_DATE.month - 1,
   EVENT_DATE.day,
   EVENT_DATE.hour,
   EVENT_DATE.minute
@@ -46,9 +42,7 @@ const calculateTimeLeft = (): TimeLeft => {
 }
 
 const Countdown = () => {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(
-    calculateTimeLeft()
-  )
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft())
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -76,17 +70,33 @@ const Countdown = () => {
   ]
 
   return (
-    <div className={`flex justify-center gap-[88.03px] text-[#082B21] ${ibm.className}`}>
+    <div
+      className={`flex justify-center 
+      gap-6 sm:gap-10 lg:gap-[88.03px] 
+      text-[#082B21] ${ibm.className}`}
+    >
       {items.map((item) => (
         <div key={item.label} className="text-center">
-          
+
           {/* ANGKA */}
-          <p className="text-[72px] font-bold leading-[59.87px]">
+          <p
+            className="
+            text-[41px] sm:text-[55px] lg:text-[72px]
+            font-bold
+            leading-tight lg:leading-[59.87px]
+          "
+          >
             {String(item.value).padStart(2, "0")}
           </p>
 
           {/* LABEL */}
-          <p className="text-[19.42px] font-medium leading-[21.04px] mt-2">
+          <p
+            className="
+            text-[17px] sm:text-[19px] lg:text-[19.42px]
+            font-medium
+            mt-1 sm:mt-2
+          "
+          >
             {item.label}
           </p>
 
