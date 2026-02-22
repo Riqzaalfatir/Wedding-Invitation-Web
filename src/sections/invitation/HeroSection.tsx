@@ -78,17 +78,17 @@ const HeroSection = () => {
   <div className="absolute bottom-0 z-999 left-0 w-full px-6 sm:px-10 md:px-16 lg:px-[44px] mt-0 lg:mt-[120px] pb-[40px] sm:pb-[50px] md:pb-[60px] lg:pb-0 lg:static">
     <div className="flex justify-between items-end text-[#082B21] uppercase tracking-widest">
 
-      <div data-aos="fade-right" data-aos-delay="200" className="text-center">
+      <div data-aos="fade-right" data-aos-delay="100" className="text-center">
         <p className={`${ibm.className} font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[28px]`}>Day</p>
         <p className={`${ibm.className} font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[28px]`}>Saturday</p>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="350" className="text-center">
+      <div data-aos="fade-up" data-aos-delay="250" className="text-center">
         <p className={`${ibm.className} font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[28px]`}>Date</p>
         <p className={`${ibm.className} font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[28px]`}>Thirty</p>
       </div>
 
-      <div data-aos="fade-left" data-aos-delay="500" className="text-right">
+      <div data-aos="fade-left" data-aos-delay="400" className="text-right">
         <p className={`${ibm.className} font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[28px]`}>Year</p>
         <p className={`${ibm.className} font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[28px]`}>2021</p>
       </div>

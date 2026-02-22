@@ -90,8 +90,6 @@ const GallerySection = () => {
                 return (
                   <div
                     key={num}
-                    data-aos="fade-up"
-                    data-aos-delay={400 + index * 100}
                     onMouseEnter={() => setActiveIndex(index)}
                     className={`relative overflow-hidden transition-all duration-300 ease-out cursor-pointer
                     ${
