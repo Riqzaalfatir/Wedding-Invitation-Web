@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <header className="absolute top-6 left-0 w-full z-20 hidden md:block lg:block pt-[40px]">
       <nav
+      data-aos="fade-up"
         className={`${ibm.className} 
         flex justify-center items-center px-4 
         gap-10 py-6 uppercase tracking-widest 

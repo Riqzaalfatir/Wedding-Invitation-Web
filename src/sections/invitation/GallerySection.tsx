@@ -8,8 +8,11 @@ const GallerySection = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
-
+   <section
+  data-aos="fade-in"
+  data-aos-duration="1000"
+  className="relative w-full min-h-screen overflow-hidden"
+>
       <Image
         src="/bg-paper.png"
         alt="Background"
@@ -25,17 +28,25 @@ const GallerySection = () => {
         src="/OrnamenKiriAtas.png"
         alt="Ornamen"
         className="absolute top-0 left-0 w-[120px] md:w-[160px] lg:w-[208px] h-auto z-10"
+        data-aos="fade-down"
+        data-aos-delay="100"
       />
       <img
         src="/OrnamenKananAtas.png"
         alt="Ornamen"
         className="absolute top-0 right-0 w-[120px] md:w-[160px] lg:w-[208px] h-auto z-10"
+        data-aos="fade-down"
+        data-aos-delay="150"
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-[140px] md:py-[200px] lg:py-[258px]">
 
         {/* TITLE */}
-        <div className="md:w-1/2 md:ml-auto mb-8">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="md:w-1/2 md:ml-auto mb-8"
+        >
           <h2 className={`${libre.className} font-medium text-[32px] md:text-[36px] lg:text-[40px] text-[#082B21] m-[7.55px]`}>
             Our Gallery
           </h2>
@@ -49,8 +60,11 @@ const GallerySection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-14 md:gap-16">
 
           {/* MAIN IMAGE */}
-          <div className="relative w-full md:w-[410px] lg:w-[560px] h-[260px] md:h-[320px] lg:h-[420px] overflow-hidden group cursor-pointer">
-
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            className="relative w-full md:w-[410px] lg:w-[560px] h-[260px] md:h-[320px] lg:h-[420px] overflow-hidden group cursor-pointer"
+          >
             <Image
               src="/pictgalery1.png"
               alt="Galery"
@@ -67,18 +81,17 @@ const GallerySection = () => {
 
           {/* THUMBNAILS */}
           <div>
-
             <div
               className="flex items-end gap-4 md:gap-6 mb-6 md:mb-8"
               onMouseLeave={() => setActiveIndex(0)}
             >
-
               {[2, 3, 4].map((num, index) => {
-                const isActive = activeIndex === index
-
+                const isActive = activeIndex === index;
                 return (
                   <div
                     key={num}
+                    data-aos="fade-up"
+                    data-aos-delay={400 + index * 100}
                     onMouseEnter={() => setActiveIndex(index)}
                     className={`relative overflow-hidden transition-all duration-300 ease-out cursor-pointer
                     ${
@@ -99,7 +112,11 @@ const GallerySection = () => {
             </div>
 
             {/* DOTS */}
-            <div className="flex justify-center gap-3">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={700}
+              className="flex justify-center gap-3"
+            >
               {[0, 1, 2].map((index) => (
                 <span
                   key={index}
@@ -112,7 +129,6 @@ const GallerySection = () => {
                 />
               ))}
             </div>
-
           </div>
 
         </div>

@@ -56,7 +56,11 @@ const RsvSection = () => {
   }
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
+  <section
+  data-aos="fade-in"
+  data-aos-duration="1000"
+  className="relative w-full min-h-screen overflow-hidden"
+>
       <div
         className="absolute inset-0 bg-cover bg-bottom"
         style={{ backgroundImage: "url('/bg-rsv.png')" }}
@@ -66,10 +70,16 @@ const RsvSection = () => {
 
       <div className="relative z-10 flex items-center min-h-screen">
         <div className="w-full max-w-6xl mx-auto px-5 sm:px-8 md:px-10">
-          <div className="w-full text-[#082B21] py-[120px] md:py-[172px]">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="w-full text-[#082B21] py-[120px] md:py-[172px]"
+          >
 
             {/* TITLE */}
             <h2
+              data-aos="fade-up"
+              data-aos-delay="200"
               className={`${libre.className}
               text-white
               text-[32px] sm:text-[36px] md:text-[40px]
@@ -81,6 +91,8 @@ const RsvSection = () => {
 
             {/* DESCRIPTION */}
             <p
+              data-aos="fade-up"
+              data-aos-delay="300"
               className={`${ibm.className}
               font-light
               text-white
@@ -97,11 +109,17 @@ const RsvSection = () => {
 
             {/* FORM */}
             <form
+              data-aos="fade-up"
+              data-aos-delay="400"
               onSubmit={handleSubmit}
               className="w-full max-w-[520px] text-white"
             >
               {/* NAME */}
-              <div className="mb-[14px] md:mb-[16.16px]">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="500"
+                className="mb-[14px] md:mb-[16.16px]"
+              >
                 <label
                   className={`${khula.className}
                   block
@@ -131,7 +149,11 @@ const RsvSection = () => {
               </div>
 
               {/* ATTENDANCE */}
-              <div className="mb-[14px] md:mb-[16.16px]">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="600"
+                className="mb-[14px] md:mb-[16.16px]"
+              >
                 <label
                   className={`${khula.className}
                   block
@@ -171,7 +193,11 @@ const RsvSection = () => {
               </div>
 
               {/* GUEST */}
-              <div className="mb-[14px] md:mb-[16.16px]">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="700"
+                className="mb-[14px] md:mb-[16.16px]"
+              >
                 <label
                   className={`${khula.className}
                   block
@@ -193,7 +219,11 @@ const RsvSection = () => {
               </div>
 
               {/* WISHES */}
-              <div className="mb-[24px] md:mb-[30px]">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="800"
+                className="mb-[24px] md:mb-[30px]"
+              >
                 <label
                   className={`${khula.className}
                   block
@@ -214,6 +244,8 @@ const RsvSection = () => {
 
               {/* BUTTON */}
               <button
+                data-aos="zoom-in"
+                data-aos-delay="900"
                 type="submit"
                 disabled={loading}
                 className={`${khula.className}
@@ -235,7 +267,10 @@ const RsvSection = () => {
 
       {success && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50 px-6">
-          <div className="bg-white p-6 md:p-8 rounded-lg text-center max-w-sm w-full">
+          <div
+            data-aos="zoom-in"
+            className="bg-white p-6 md:p-8 rounded-lg text-center max-w-sm w-full"
+          >
             <h3 className="text-xl font-semibold mb-4">Thank You!</h3>
             <p className="mb-6">
               Your RSVP has been successfully sent.
@@ -249,7 +284,7 @@ const RsvSection = () => {
           </div>
         </div>
       )}
-    </section>
+</section>
   )
 }
 

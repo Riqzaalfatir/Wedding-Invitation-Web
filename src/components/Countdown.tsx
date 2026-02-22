@@ -70,39 +70,47 @@ const Countdown = () => {
   ]
 
   return (
+   <div
+  data-aos="fade-up"
+  data-aos-duration="1000"
+  className={`flex justify-center 
+  gap-6 sm:gap-10 lg:gap-[88.03px] 
+  text-[#082B21] ${ibm.className}`}
+>
+  {items.map((item, index) => (
     <div
-      className={`flex justify-center 
-      gap-6 sm:gap-10 lg:gap-[88.03px] 
-      text-[#082B21] ${ibm.className}`}
+      key={item.label}
+      data-aos="zoom-in"
+      data-aos-delay={index * 150}
+      data-aos-duration="800"
+      className="text-center"
     >
-      {items.map((item) => (
-        <div key={item.label} className="text-center">
 
-          {/* ANGKA */}
-          <p
-            className="
-            text-[41px] sm:text-[55px] lg:text-[72px]
-            font-bold
-            leading-tight lg:leading-[59.87px]
-          "
-          >
-            {String(item.value).padStart(2, "0")}
-          </p>
+      {/* ANGKA */}
+      <p
+        className="
+        text-[41px] sm:text-[55px] lg:text-[72px]
+        font-bold
+        leading-tight lg:leading-[59.87px]
+      "
+      >
+        {String(item.value).padStart(2, "0")}
+      </p>
 
-          {/* LABEL */}
-          <p
-            className="
-            text-[17px] sm:text-[19px] lg:text-[19.42px]
-            font-medium
-            mt-1 sm:mt-2
-          "
-          >
-            {item.label}
-          </p>
+      {/* LABEL */}
+      <p
+        className="
+        text-[17px] sm:text-[19px] lg:text-[19.42px]
+        font-medium
+        mt-1 sm:mt-2
+      "
+      >
+        {item.label}
+      </p>
 
-        </div>
-      ))}
     </div>
+  ))}
+</div>
   )
 }
 
