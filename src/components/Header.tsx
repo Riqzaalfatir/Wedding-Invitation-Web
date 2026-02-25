@@ -2,7 +2,7 @@ import { ibm } from "@/lib/fonts";
 
 const Header = () => {
   return (
-    <header className="absolute top-6 left-0 w-full z-20 hidden md:block lg:block pt-[40px]">
+    <header className="absolute top-6 left-0 w-full z-20 hidden md:block lg:block pt-10">
       <nav
       data-aos="fade-up"
         className={`${ibm.className} 

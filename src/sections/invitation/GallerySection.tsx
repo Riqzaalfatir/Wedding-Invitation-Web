@@ -8,7 +8,7 @@ const GallerySection = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (
-   <section
+   <section id="gallery"
   data-aos="fade-in"
   data-aos-duration="1000"
   className="relative w-full min-h-screen overflow-hidden"
@@ -21,9 +21,8 @@ const GallerySection = () => {
         className="object-cover object-bottom -z-10"
       />
 
-      <div className="pointer-events-none absolute top-0 left-0 w-full h-4 bg-gradient-to-b from-[#f5f5f5] to-transparent z-0" />
+      <div className="pointer-events-none absolute top-0 left-0 w-full h-4 bg-linear-to-b from-[#f5f5f5] to-transparent z-0" />
 
-      {/* ORNAMEN RESPONSIVE */}
       <img
         src="/OrnamenKiriAtas.png"
         alt="Ornamen"
@@ -41,7 +40,6 @@ const GallerySection = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-[140px] md:py-[200px] lg:py-[258px]">
 
-        {/* TITLE */}
         <div
           data-aos="fade-up"
           data-aos-delay="200"
@@ -56,10 +54,8 @@ const GallerySection = () => {
           </p>
         </div>
 
-        {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-14 md:gap-16">
 
-          {/* MAIN IMAGE */}
           <div
             data-aos="zoom-in"
             data-aos-delay="300"
@@ -79,7 +75,6 @@ const GallerySection = () => {
             </div>
           </div>
 
-          {/* THUMBNAILS */}
           <div>
             <div
               className="flex items-end gap-4 md:gap-6 mb-6 md:mb-8"
@@ -109,7 +104,6 @@ const GallerySection = () => {
               })}
             </div>
 
-            {/* DOTS */}
             <div
               data-aos="fade-up"
               data-aos-delay={700}

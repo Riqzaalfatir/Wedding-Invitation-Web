@@ -86,7 +86,6 @@ const Countdown = () => {
       className="text-center"
     >
 
-      {/* ANGKA */}
       <p
         className="
         text-[41px] sm:text-[55px] lg:text-[72px]
@@ -97,7 +96,6 @@ const Countdown = () => {
         {String(item.value).padStart(2, "0")}
       </p>
 
-      {/* LABEL */}
       <p
         className="
         text-[17px] sm:text-[19px] lg:text-[19.42px]

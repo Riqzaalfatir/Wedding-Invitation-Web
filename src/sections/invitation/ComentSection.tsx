@@ -24,9 +24,8 @@ const ComentSection = () => {
 >
       <Image src="/bg-paper.png" alt="bg" fill className="object-cover object-bottom -z-10" priority/>
 
-      <div className="pointer-events-none absolute top-0 left-0 w-full h-4 bg-gradient-to-b from-[#f5f5f5] to-transparent z-0" />
+      <div className="pointer-events-none absolute top-0 left-0 w-full h-4 bg-linear-to-b from-[#f5f5f5] to-transparent z-0" />
 
-      {/* ORNAMEN */}
       <img
         src="/OrnamenKananAtas.png"
         alt="Ornamen"
@@ -50,16 +49,14 @@ const ComentSection = () => {
             <div
               key={item.id}
               data-aos="fade-up"
-              data-aos-delay={150 + index * 100} // stagger animasi per item
+              data-aos-delay={150 + index * 100} 
               className="border-b-[0.86px] border-[#000000] pb-[24px] md:pb-[32.96px]"
             >
 
-              {/* FLEX WRAP UNTUK MOBILE */}
               <div className="flex flex-col md:flex-row md:items-start gap-3 md:gap-0">
 
                 <div className="flex items-start gap-[20px] md:gap-[33px] flex-1">
 
-                  {/* NAME */}
                   <div
                     className={`${khula.className}
                     font-semibold
@@ -71,7 +68,6 @@ const ComentSection = () => {
                     {item.nama}
                   </div>
 
-                  {/* MESSAGE */}
                   <div
                     className={`${khula.className}
                     font-light
@@ -84,7 +80,6 @@ const ComentSection = () => {
 
                 </div>
 
-                {/* TIME */}
                 <div
                   className={`${khula.className}
                   font-light
@@ -103,7 +98,6 @@ const ComentSection = () => {
           ))}
         </div>
 
-        {/* PAGINATION */}
         <div
           data-aos="fade-up"
           data-aos-delay={200 + currentData.length * 100}
