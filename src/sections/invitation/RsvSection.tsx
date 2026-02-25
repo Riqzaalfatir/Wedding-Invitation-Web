@@ -65,7 +65,7 @@ const RsvSection = () => {
               We kindly request your prompt response to confirm your attendance at our upcoming event. Alongside your RSVP, please take a moment to extend your warm regards and best wishes.
             </p>
 
-            <form data-aos="fade-up" data-aos-delay="400" onSubmit={handleSubmit} className="w-full max-w-4.5 text-white">
+            <form data-aos="fade-up" data-aos-delay="400" onSubmit={handleSubmit} className="w-full max-w-xl text-white">
 
               <div data-aos="fade-up" data-aos-delay="500" className="mb-3.5 md:mb-[16.16px]">
                 <label className={`${khula.className} block text-[16px] md:text-[18px] mb-1`}>NAME</label>
